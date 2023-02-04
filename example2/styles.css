@@ -1,0 +1,64 @@
+/* anything */
+* {
+	font-size: 20px;
+}
+
+/* by tag */
+b {
+	color: red;
+}
+
+/* by id */
+#paragraph {
+	text-decoration: underline;
+}
+
+/* by class */
+.span {
+	color: midnightblue;
+}
+
+.division {
+	color: orangered;
+	text-decoration: underline;
+}
+
+.div {
+	text-decoration: line-through;
+}
+
+/* by descendant */
+.parent .descendant {
+	font-weight: bold;
+}
+
+/* by pseudo-class */
+a:link {
+	color: green;
+}
+
+a:visited {
+	color: royalblue;
+}
+
+a:hover {
+	color: red;
+}
+
+/* by neighbour/next one (first one) */
+span + p {
+	color: red;
+	background: royalblue;
+}
+
+/* by parentship, parent > child (first after parent) */
+.parent > .child {
+	color: crimson;
+	background: mediumpurple;
+}
+
+/* by neighbour/next one (all) */
+.first ~ .second {
+	color: green;
+	font-weight: bold;
+}
