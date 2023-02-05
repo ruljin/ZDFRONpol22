@@ -62,3 +62,74 @@ span + p {
 	color: green;
 	font-weight: bold;
 }
+
+/* by attribute */
+input[value="child"] {
+	color: red;
+}
+
+input[value="parent"] {
+	color: green;
+}
+
+input[value~="foka"] {
+	color: blue;
+}
+
+/* negation (not) */
+a:not(p) {
+	text-decoration: line-through;
+}
+
+a:not(:first-child) {
+	text-decoration: underline;
+}
+
+/* by pseudo-element */
+.container {
+	position: relative;
+	color: red;
+	background: blue;
+	width: 200px;
+	height: 200px;
+}
+
+.container::first-letter {
+	color: greenyellow;
+	font-weight: bold;
+}
+
+.container::first-line {
+	color: rgb(157, 165, 42);
+}
+
+.container::after {
+	content: "A";
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.container::before {
+	content: "B";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* by nth child */
+li:first-child {
+	color: red;
+}
+
+li:nth-child(4) {
+	color: green;
+}
+
+li:last-child {
+	color: blue;
+}
+
+li:nth-child(2n) {
+	color: purple;
+}

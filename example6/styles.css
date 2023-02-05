@@ -1,0 +1,65 @@
+body {
+	background-color: burlywood;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.none {
+	float: none;
+}
+
+.div1,
+.div3 {
+	float: left;
+	padding: 5px;
+	border: 2px solid red;
+}
+
+.div2,
+.div4,
+.container {
+	padding: 5px;
+	border: 2px solid blue;
+}
+
+.div4 {
+	clear: left;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+/* .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+} */
+
+section {
+	overflow: hidden;
+	height: 50px;
+	margin-bottom: 40px;
+}
+
+.visible {
+	overflow: visible;
+}
+
+.scroll {
+	overflow-y: scroll;
+}
+
+.division {
+	color: red; /* nazwa */
+	color: #123456; /* szesnastkowy */
+	color: rgb(255, 205, 155); /* rgb */
+	color: rgba(255, 205, 155, 0.5); /* rgba */
+	background-color: transparent; /* rgba (0, 0, 0, 0) */
+}

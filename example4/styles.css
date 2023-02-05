@@ -1,0 +1,67 @@
+:root {
+	font-size: 10px;
+}
+
+body {
+	margin: 0;
+}
+
+.division {
+	width: 100px;
+}
+
+/* Styling .division individually */
+.division:first-child {
+	background-color: coral;
+}
+
+.division:first-child > div {
+	/* width: 25px; - sytuacja gdy content wypada z kontenera*/
+	width: 50px;
+	height: 50px;
+	background-color: dodgerblue;
+	font-size: 14px;
+}
+
+.division:nth-child(2) {
+	width: 50%;
+	height: 50px;
+	background-color: cornflowerblue;
+	font-size: 5px;
+}
+
+.division:nth-child(2) > div {
+	background-color: red;
+	height: 75%;
+	font-size: 2em; /* 2 * 5px(parent) = 10px */
+}
+
+.division:nth-child(3) {
+	/* position: relative; */
+	width: 50vw;
+	height: 25vh;
+	background-color: darkcyan;
+	/* font-size: 5px; */
+}
+
+.division:nth-child(3) > div {
+	font-size: 1.5rem; /* 1.5 * 10px(root) = 15px */
+}
+
+.division:nth-child(4) {
+	background-color: darkgoldenrod;
+}
+
+.division:nth-child(4) > div {
+	width: 50%;
+	background-color: lawngreen;
+}
+
+.division:last-child {
+	background-color: darkkhaki;
+}
+
+.division:last-child > div {
+	width: 50vw;
+	background-color: rgb(38, 68, 8);
+}

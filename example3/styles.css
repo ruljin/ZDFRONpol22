@@ -1,0 +1,41 @@
+div {
+	background: cadetblue;
+}
+
+.division {
+	color: purple;
+}
+
+/* SPECIFICITY */
+section.section {
+	color: yellow;
+	background: red;
+}
+
+section {
+	color: red;
+}
+
+.section {
+	background: blue;
+	/* background: blue !important; */
+}
+
+/* właściwość: wartość !important - 
+IGNORUJE mechanizm specificity dla DANEJ właściwości*/
+
+/* GRUPY WAG: */
+/* style="background: green" - INLINE style zawsze PRZEGRA z !important
+ale wygra z wagami, wynikającymi z mechanizmu SPECIFICITY */
+/* INLINE styling */
+
+/* #first { ... } - 100 */
+/* ID */
+
+/* .second { ... } - 10 */
+/* class, pseudo-class, attribute-selectors */
+
+/* first { ... } - 1 */
+/* elements, pseudo-elements */
+
+/* '*' { ... } - `universal` selector, wagę = 0 */
