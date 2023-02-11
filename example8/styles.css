@@ -1,0 +1,31 @@
+.grid__container {
+	display: grid;
+	grid-template-columns: repeat(4, 50px);
+	grid-template-rows: auto;
+	grid-template-areas:
+		"header header header header"
+		"main   main   .      sidebar"
+		"footer footer footer footer";
+}
+
+.grid__item {
+	background-color: lightblue;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.grid__item--first {
+	grid-area: header;
+}
+
+.grid__item--second {
+	grid-area: main;
+}
+
+.grid__item--third {
+	grid-area: sidebar;
+}
+
+.grid__item--fourth {
+	grid-area: footer;
+}

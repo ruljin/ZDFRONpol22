@@ -1,3 +1,26 @@
+.flex__box {
+	display: flex;
+}
+
+.flex__item {
+	height: 100px;
+}
+
+.flex__item:nth-child(1) {
+	background-color: red;
+	width: 100px;
+}
+
+.flex__item:nth-child(2) {
+	background-color: green;
+	width: 200px;
+}
+
+.flex__item:nth-child(3) {
+	background-color: blue;
+	width: 300px;
+}
+
 .wrapper {
 	background-color: lightblue;
 	width: 249px;
